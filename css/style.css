@@ -360,7 +360,7 @@ p {
   margin-top: 18px;
 }
 
-.info-list {
+/* .info-list {
   display: grid;
   gap: 8px;
   margin-top: 14px;
@@ -371,7 +371,7 @@ p {
   color: var(--muted);
   font-size: 0.9rem;
   line-height: 1.45;
-}
+} */
 
 .image-gallery {
   display: grid;

@@ -58,15 +58,11 @@ a {
 }
 
 .brand-logo {
-  display: grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  border: 1px solid rgba(184, 145, 92, 0.48);
-  border-radius: var(--radius);
-  background: linear-gradient(135deg, var(--accent), #ead6b2);
-  color: #181410;
-  font-weight: 900;
+  display: block;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  object-fit: contain;
 }
 
 .brand-name {

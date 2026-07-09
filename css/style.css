@@ -194,7 +194,6 @@ p {
   border-color: rgba(255, 211, 61, 0.28);
   background: linear-gradient(180deg, var(--shopee), var(--shopee-dark));
   color: #ffffff;
-  margin-bottom: 20px;
 }
 
 .btn-shopee:hover {
@@ -451,10 +450,10 @@ p {
   min-width: 104px;
   min-height: 48px;
   padding: 12px 14px;
-  border: 1px solid rgba(255, 250, 242, 0.22);
+  border: 1px solid transparent;
   border-radius: var(--radius);
-  background: rgba(17, 17, 17, 0.84);
-  color: #ffffff;
+  background: linear-gradient(135deg, var(--accent), #e6e6e6);
+  color: #181410;
   font: inherit;
   font-weight: 900;
   cursor: pointer;
@@ -462,7 +461,8 @@ p {
 }
 
 .image-viewer-nav:hover {
-  background: rgba(184, 145, 92, 0.92);
+  border-color: rgba(184, 145, 92, 0.8);
+  background: linear-gradient(135deg, #ffffff, #d8d8d8);
   color: #181410;
 }
 
@@ -557,6 +557,11 @@ body.modal-open {
   .hero-actions .btn,
   .modal-actions .btn {
     width: 100%;
+  }
+
+  .hero-actions .btn-shopee,
+  .modal-actions .btn-shopee {
+    margin-bottom: 20px;
   }
 
   .modal-card {

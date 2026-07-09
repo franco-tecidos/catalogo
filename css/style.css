@@ -86,7 +86,7 @@ a {
 .tabs a {
   flex: 0 0 auto;
   padding: 10px 13px;
-  border: 2px solid black;
+  border: 1px solid rgb(100, 21, 21);
   border-radius: 999px;
   color: black;
   font-size: 0.9rem;

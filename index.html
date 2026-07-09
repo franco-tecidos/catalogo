@@ -1,414 +1,773 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Francos Tecidos</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Francos Tecidos</title>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Francos Tecidos">
+        <span class="brand-logo">FT</span>
+        <span class="brand-name">Francos Tecidos</span>
+      </a>
 
-<body>
-  <header class="topbar">
-    <a class="brand" href="#inicio" aria-label="Francos Tecidos">
-      <span class="brand-logo">FT</span>
-      <span class="brand-name">Francos Tecidos</span>
-    </a>
+      <nav class="tabs" aria-label="Categorias">
+        <a href="#inicio">Produtos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
 
-    <nav class="tabs" aria-label="Categorias">
-      <a href="#inicio">Produtos</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header>
+    <main id="inicio">
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Catálogo visual</p>
+          <h1>Francos Tecidos</h1>
+          <p>
+            Catálogo de tecidos, materiais e aviamentos selecionados para
+            costura, estofaria, decoração e artesanato. Valores e
+            disponibilidade somente por atendimento.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="btn primary"
+              href="https://wa.me/554330111131"
+              target="_blank"
+              rel="noopener"
+              >WhatsApp</a
+            >
+            <a
+              class="btn"
+              href="https://shopee.com.br/francoretalhos"
+              target="_blank"
+              rel="noopener"
+              >Shopee</a
+            >
+          </div>
+        </div>
+      </section>
 
-  <main id="inicio">
-    <section class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">Catálogo visual</p>
-        <h1>Francos Tecidos</h1>
-        <p>Catálogo de tecidos, materiais e aviamentos selecionados para costura, estofaria, decoração e artesanato.
-          Valores e disponibilidade somente por atendimento.</p>
+      <section id="produtos" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Produtos</p>
+          <h2>Catálogo</h2>
+        </div>
+
+        <form class="search-bar" role="search">
+          <input
+            id="product-search"
+            type="search"
+            placeholder="Pesquisar por nome do produto"
+            aria-label="Pesquisar por nome do produto"
+          />
+          <button id="product-search-button" class="btn primary" type="submit">
+            Pesquisar
+          </button>
+          <button id="product-search-clear" class="btn" type="button">
+            Limpar
+          </button>
+        </form>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <img
+              class="product-img"
+              src="images/products/a10_cortes_corvim/capa.jpg"
+              alt="10 cortes de corvim"
+            />
+            <div class="product-info">
+              <h3>CORVIM/CORANO KG</h3>
+              <p>
+                Material anti-derrapante, vendido por quilo com otimo rendimento<br><br>
+              </p>
+              <a class="btn primary" href="#detalhe-a">Detalhes</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              class="product-img"
+              src="images/products/b_corano_preto_de_metro/coranoPreto_capa.jpg"
+              alt="Corano preto de metro"
+            />
+            <div class="product-info">
+              <h3>CORANO PRETO CIPATEX METRO</h3>
+              <p>
+                Corano preto com acabamento visual sofisticado, indicado para
+                revestimentos, estofaria e reformas.
+              </p>
+              <a class="btn primary" href="#detalhe-b">Detalhes</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              class="product-img"
+              src="images/products/c_gorgurinho/gorgurinho_capa.jpg"
+              alt="Gorgurinho"
+            />
+            <div class="product-info">
+              <h3>GORGURINHO ESTAMPADO</h3>
+              <p>
+                Tecido encorpado e texturizado, ideal para decoração,
+                artesanato, capas, painéis e peças utilitárias.
+              </p>
+              <a class="btn primary" href="#detalhe-c">Detalhes</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              class="product-img"
+              src="images/products/d_helancas/helanca_capa.jpg"
+              alt="Helancas"
+            />
+            <div class="product-info">
+              <h3>HELANCA LIGHT GRAMATURA 120 </h3>
+              <p>
+              🎀 Viés de helanca light 2,5 cm - gramatura 120 <br>Diversas cores disponíveis
+                <br><br>
+              </p>
+              <a class="btn primary" href="#detalhe-d">Detalhes</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              class="product-img"
+              src="images/products/e_linhao_de_estofaria/linhao_capa.png"
+              alt="Linhão de estofaria"
+            />
+            <div class="product-info">
+              <h3>Linhão de estofaria</h3>
+              <p>
+                Linhão de visual elegante para estofados, almofadas, decoração e
+                acabamentos com presença.
+              </p>
+              <a class="btn primary" href="#detalhe-e">Detalhes</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              class="product-img"
+              src="images/products/f_linhas_80/linhas80_capa.jpg"
+              alt="Linhas 80"
+            />
+            <div class="product-info">
+              <h3>Linhas 80</h3>
+              <p>
+                Linhas para costura, acabamento e manutenção, com variedade para
+                diferentes combinações de tecido.
+              </p>
+              <a class="btn primary" href="#detalhe-f">Detalhes</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              class="product-img"
+              src="images/products/g_super_caixa_de_retalhos/superCaixaRetalhos_capa.png"
+              alt="Super caixa de retalhos"
+            />
+            <div class="product-info">
+              <h3>Super caixa de retalhos</h3>
+              <p>
+                Caixa com retalhos variados para artesanato, testes de costura,
+                composição de peças e reaproveitamento criativo.
+              </p>
+              <a class="btn primary" href="#detalhe-g">Detalhes</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              class="product-img"
+              src="images/products/h_tnt_150/tnt150_capa.png"
+              alt="TNT 150"
+            />
+            <div class="product-info">
+              <h3>TNT 150</h3>
+              <p>
+                TNT 150 versátil para organização, proteção, decoração, eventos,
+                embalagens e projetos manuais.
+              </p>
+              <a class="btn primary" href="#detalhe-h">Detalhes</a>
+            </div>
+          </article>
+        </div>
+
+        <p id="search-empty" class="search-empty" hidden>
+          Nenhum produto encontrado.
+        </p>
+      </section>
+
+      <section id="contato" class="contact-band">
+        <h2>Consulte disponibilidade e valores</h2>
+        <p>
+          Entre em contato pelo telefone 43 3011-1131 para confirmar modelos,
+          cores, medidas e atendimento.
+        </p>
         <div class="hero-actions">
-          <a class="btn primary" href="https://wa.me/554330111131" target="_blank" rel="noopener">WhatsApp</a>
-          <a class="btn" href="https://shopee.com.br/francoretalhos" target="_blank" rel="noopener">Shopee</a>
+          <a
+            class="btn primary"
+            href="https://wa.me/554330111131"
+            target="_blank"
+            rel="noopener"
+            >WhatsApp</a
+          >
+          <a
+            class="btn"
+            href="https://shopee.com.br/francoretalhos"
+            target="_blank"
+            rel="noopener"
+            >Shopee</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <div id="detalhe-a" class="modal" role="dialog" aria-labelledby="titulo-a">
+      <a class="modal-backdrop" href="#produtos" aria-label="Fechar"></a>
+      <div class="modal-card">
+        <a class="modal-close" href="#produtos" aria-label="Fechar">✕ Fechar</a>
+        <img
+          class="modal-img"
+          src="images/products/a10_cortes_corvim/capa.jpg"
+          alt="Capa 10 cortes de corvim"
+        />
+        <h2 id="titulo-a">Corvim/Corano KG</h2>
+        <p>
+          ✨ CORVIM/CORANO KG - MATERIAL VERSATIL PARA ARTESANATO E PRODUCAO<br /><br />
+          Material ideal para base de tapetes, artesanato, costura criativa e
+          revestimentos variados. Vendido por quilo, com otimo aproveitamento
+          para quem busca rendimento e praticidade.<br /><br />
+
+          📏 ESPECIFICACOES DO PRODUTO<br />
+          ✔ Material: corvim, corano e corino variados<br />
+          ✔ Largura aproximada: 1,40 m<br />
+          ✔ Cores variadas conforme disponibilidade de estoque<br />
+          ✔ Material resistente e facil de trabalhar<br /><br />
+
+          🧵 INDICACOES DE USO<br />
+          ✅ Bases para tapetes<br />
+          ✅ Bolsas e porta-moedas<br />
+          ✅ Peso de porta e puffs<br />
+          ✅ Artesanato em geral<br /><br />
+
+          💡 OBSERVACAO<br />
+          ✨ As cores seguem a disponibilidade do estoque, por isso nao e
+          possivel escolher cores especificas.
+        </p>
+        <div class="image-gallery">
+          <img
+            src="images/products/a10_cortes_corvim/base1.jpg"
+            alt="10 cortes de corvim imagem base1"
+          />
+          <img
+            src="images/products/a10_cortes_corvim/base2.jpg"
+            alt="10 cortes de corvim imagem base2"
+          />
+          <img
+            src="images/products/a10_cortes_corvim/base3.png"
+            alt="10 cortes de corvim imagem base3"
+          />
+          <img
+            src="images/products/a10_cortes_corvim/base4.jpg"
+            alt="10 cortes de corvim imagem base4"
+          />
+        </div>
+        <div class="modal-actions">
+          <a
+            class="btn primary"
+            href="https://wa.me/554330111131?text=Ol%C3%A1%2C%20quero%20detalhes%20sobre%2010%20cortes%20de%20corvim."
+            target="_blank"
+            rel="noopener"
+            >WhatsApp</a
+          >
+          <a
+            class="btn"
+            href="https://shopee.com.br/KIT-15-kgBase-para-TAPETE-ARTESANATO-patchwork-corano-corino-corvim-sint%C3%A9tico-MAIOR-RENDIMENTO-i.1225425014.58260111165"
+            target="_blank"
+            rel="noopener"
+            >Shopee</a
+          >
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="produtos" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Produtos</p>
-        <h2>Catálogo</h2>
-      </div>
+    <div id="detalhe-b" class="modal" role="dialog" aria-labelledby="titulo-b">
+      <a class="modal-backdrop" href="#produtos" aria-label="Fechar"></a>
+      <div class="modal-card">
+        <a class="modal-close" href="#produtos" aria-label="Fechar">✕ Fechar</a>
+        <img
+          class="modal-img"
+          src="images/products/b_corano_preto_de_metro/coranoPreto_capa.jpg"
+          alt="Capa corano preto de metro"
+        />
+        <h2 id="titulo-b">Corano preto Cipatex</h2>
+        <p>
+          CORANO PRETO CIPATEX – QUALIDADE E RESISTÊNCIA PARA SEUS PROJETOS<br /><br />
+          O Corano Preto Cipatex é um couro sintético de alta qualidade, ideal
+          para quem busca durabilidade, beleza e praticidade. Muito utilizado em
+          estofaria profissional, ele possui excelente acabamento e é fácil de
+          trabalhar.<br /><br />
 
-      <form class="search-bar" role="search">
-        <input id="product-search" type="search" placeholder="Pesquisar por nome do produto"
-          aria-label="Pesquisar por nome do produto">
-        <button id="product-search-button" class="btn primary" type="submit">Pesquisar</button>
-        <button id="product-search-clear" class="btn" type="button">Limpar</button>
-      </form>
+          📏 ESPECIFICAÇÕES DO PRODUTO<br />
+          ✔ Cor: Preto<br />
+          ✔ Material: Corano (couro sintético)<br />
+          ✔ Marca: Cipatex<br />
+          ✔ Alta resistência e durabilidade<br />
+          ✔ Fácil limpeza (pano úmido já resolve)<br />
+          ✔ Toque macio e acabamento premium<br /><br />
 
-      <div class="product-grid">
-        <article class="product-card">
-          <img class="product-img" src="images/products/a10_cortes_corvim/capa.jpg" alt="10 cortes de corvim">
-          <div class="product-info">
-            <h3>CORVIM/CORANO KG</h3>
-            <p>Material anti-derrapante, vendido por quilo com otimo rendimento</p>
-            <a class="btn primary" href="#detalhe-a">Detalhes</a>
-          </div>
-        </article>
+          🛠️ INDICAÇÕES DE USO<br />
+          ✅Bases para tapete<br />
+          ✅ Sofás e estofados<br />
+          ✅ Cabeceiras de cama<br />
+          ✅ Painéis e decoração<br />
+          ✅ Artesanato em geral<br /><br />
 
-        <article class="product-card">
-          <img class="product-img" src="images/products/b_corano_preto_de_metro/coranoPreto_capa.jpg"
-            alt="Corano preto de metro">
-          <div class="product-info">
-            <h3>CORANO PRETO CIPATEX METRO</h3>
-            <p>Corano preto com acabamento visual sofisticado, indicado para revestimentos, estofaria e reformas.</p>
-            <a class="btn primary" href="#detalhe-b">Detalhes</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img class="product-img" src="images/products/c_gorgurinho/gorgurinho_capa.jpg" alt="Gorgurinho">
-          <div class="product-info">
-            <h3>KIT 10 METROS GORGURINHO ESTAMPADO</h3>
-            <p>Tecido encorpado e texturizado, ideal para decoração, artesanato, capas, painéis e peças utilitárias.</p>
-            <a class="btn primary" href="#detalhe-c">Detalhes</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img class="product-img" src="images/products/d_helancas/helanca_capa.jpg" alt="Helancas">
-          <div class="product-info">
-            <h3>Helancas</h3>
-            <p>Helanca com toque maleável para costura, confecção, forração leve e aplicações que pedem flexibilidade.
-            </p>
-            <a class="btn primary" href="#detalhe-d">Detalhes</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img class="product-img" src="images/products/e_linhao_de_estofaria/linhao_capa.png"
-            alt="Linhão de estofaria">
-          <div class="product-info">
-            <h3>Linhão de estofaria</h3>
-            <p>Linhão de visual elegante para estofados, almofadas, decoração e acabamentos com presença.</p>
-            <a class="btn primary" href="#detalhe-e">Detalhes</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img class="product-img" src="images/products/f_linhas_80/linhas80_capa.jpg" alt="Linhas 80">
-          <div class="product-info">
-            <h3>Linhas 80</h3>
-            <p>Linhas para costura, acabamento e manutenção, com variedade para diferentes combinações de tecido.</p>
-            <a class="btn primary" href="#detalhe-f">Detalhes</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img class="product-img" src="images/products/g_super_caixa_de_retalhos/superCaixaRetalhos_capa.png"
-            alt="Super caixa de retalhos">
-          <div class="product-info">
-            <h3>Super caixa de retalhos</h3>
-            <p>Caixa com retalhos variados para artesanato, testes de costura, composição de peças e reaproveitamento
-              criativo.</p>
-            <a class="btn primary" href="#detalhe-g">Detalhes</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img class="product-img" src="images/products/h_tnt_150/tnt150_capa.png" alt="TNT 150">
-          <div class="product-info">
-            <h3>TNT 150</h3>
-            <p>TNT 150 versátil para organização, proteção, decoração, eventos, embalagens e projetos manuais.</p>
-            <a class="btn primary" href="#detalhe-h">Detalhes</a>
-          </div>
-        </article>
-      </div>
-
-      <p id="search-empty" class="search-empty" hidden>Nenhum produto encontrado.</p>
-    </section>
-
-    <section id="contato" class="contact-band">
-      <h2>Consulte disponibilidade e valores</h2>
-      <p>Entre em contato pelo telefone 43 3011-1131 para confirmar modelos, cores, medidas e atendimento.</p>
-      <div class="hero-actions">
-        <a class="btn primary" href="https://wa.me/554330111131" target="_blank" rel="noopener">WhatsApp</a>
-        <a class="btn" href="https://shopee.com.br/francoretalhos" target="_blank" rel="noopener">Shopee</a>
-      </div>
-    </section>
-  </main>
-
-  <div id="detalhe-a" class="modal" role="dialog" aria-labelledby="titulo-a">
-    <a class="modal-backdrop" href="#produtos" aria-label="Fechar"></a>
-    <div class="modal-card">
-      <a class="modal-close" href="#produtos" aria-label="Fechar">✕ Fechar</a>
-      <img class="modal-img" src="images/products/a10_cortes_corvim/capa.jpg" alt="Capa 10 cortes de corvim">
-      <h2 id="titulo-a">Corvim/Corano KG</h2>
-      <p>
-        ✨ CORVIM/CORANO KG - MATERIAL VERSATIL PARA ARTESANATO E PRODUCAO<br><br>
-        Material ideal para base de tapetes, artesanato, costura criativa e revestimentos variados. Vendido por quilo,
-        com otimo aproveitamento para quem busca rendimento e praticidade.<br><br>
-
-        📏 ESPECIFICACOES DO PRODUTO<br>
-        ✔ Material: corvim, corano e corino variados<br>
-        ✔ Largura aproximada: 1,40 m<br>
-        ✔ Cores variadas conforme disponibilidade de estoque<br>
-        ✔ Material resistente e facil de trabalhar<br><br>
-
-        🧵 INDICACOES DE USO<br>
-        ✅ Bases para tapetes<br>
-        ✅ Bolsas e porta-moedas<br>
-        ✅ Peso de porta e puffs<br>
-        ✅ Artesanato em geral<br><br>
-
-        💡 OBSERVACAO<br>
-        ✨ As cores seguem a disponibilidade do estoque, por isso nao e possivel escolher cores especificas.
-      </p>
-      <div class="image-gallery">
-        <img src="images/products/a10_cortes_corvim/base1.jpg" alt="10 cortes de corvim imagem base1">
-        <img src="images/products/a10_cortes_corvim/base2.jpg" alt="10 cortes de corvim imagem base2">
-        <img src="images/products/a10_cortes_corvim/base3.png" alt="10 cortes de corvim imagem base3">
-        <img src="images/products/a10_cortes_corvim/base4.jpg" alt="10 cortes de corvim imagem base4">
-      </div>
-      <div class="modal-actions">
-        <a class="btn primary"
-          href="https://wa.me/554330111131?text=Ol%C3%A1%2C%20quero%20detalhes%20sobre%2010%20cortes%20de%20corvim."
-          target="_blank" rel="noopener">WhatsApp</a>
-        <a class="btn"
-          href="https://shopee.com.br/KIT-15-kgBase-para-TAPETE-ARTESANATO-patchwork-corano-corino-corvim-sint%C3%A9tico-MAIOR-RENDIMENTO-i.1225425014.58260111165"
-          target="_blank" rel="noopener">Shopee</a>
+          💡 DIFERENCIAIS<br />
+          ✨ Material resistente ao uso diário<br />
+          ✨ Não descasca com facilidade<br />
+          ✨ Ótimo custo-benefício<br />
+          ✨ Ideal para uso profissional ou doméstico<br />
+        </p>
+        <div class="image-gallery">
+          <img
+            src="images/products/b_corano_preto_de_metro/coranoPreto1.jpg"
+            alt="Corano preto imagem 1"
+          />
+          <img
+            src="images/products/b_corano_preto_de_metro/coranoPreto2.jpg"
+            alt="Corano preto imagem 2"
+          />
+          <img
+            src="images/products/b_corano_preto_de_metro/coranoPreto3.jpg"
+            alt="Corano preto imagem 3"
+          />
+          <img
+            src="images/products/b_corano_preto_de_metro/coranoPreto4.jpg"
+            alt="Corano preto imagem 4"
+          />
+          <img
+            src="images/products/b_corano_preto_de_metro/coranoPreto5.jpg"
+            alt="Corano preto imagem 5"
+          />
+        </div>
+        <div class="modal-actions">
+          <a
+            class="btn primary"
+            href="https://wa.me/554330111131?text=Ol%C3%A1%2C%20quero%20detalhes%20sobre%20corano%20preto%20de%20metro."
+            target="_blank"
+            rel="noopener"
+            >WhatsApp</a
+          >
+          <a
+            class="btn"
+            href="https://shopee.com.br/Corano-Preto-Cipatex-10-metros-Couro-Sint%C3%A9tico-Alta-Qualidade-Para-Estofaria-Base-tapete-Frufru-i.1225425014.58207699003"
+            target="_blank"
+            rel="noopener"
+            >Shopee</a
+          >
+        </div>
       </div>
     </div>
-  </div>
 
-  <div id="detalhe-b" class="modal" role="dialog" aria-labelledby="titulo-b">
-    <a class="modal-backdrop" href="#produtos" aria-label="Fechar"></a>
-    <div class="modal-card">
-      <a class="modal-close" href="#produtos" aria-label="Fechar">✕ Fechar</a>
-      <img class="modal-img" src="images/products/b_corano_preto_de_metro/coranoPreto_capa.jpg"
-        alt="Capa corano preto de metro">
-      <h2 id="titulo-b">Corano preto Cipatex</h2>
-      <p>
-        CORANO PRETO CIPATEX – QUALIDADE E RESISTÊNCIA PARA SEUS PROJETOS<br><br>
-        O Corano Preto Cipatex é um couro sintético de alta qualidade, ideal para quem busca durabilidade, beleza e
-        praticidade. Muito utilizado em estofaria profissional, ele possui excelente acabamento e é fácil de
-        trabalhar.<br><br>
+    <div id="detalhe-c" class="modal" role="dialog" aria-labelledby="titulo-c">
+      <a class="modal-backdrop" href="#produtos" aria-label="Fechar"></a>
+      <div class="modal-card">
+        <a class="modal-close" href="#produtos" aria-label="Fechar">✕ Fechar</a>
+        <img
+          class="modal-img"
+          src="images/products/c_gorgurinho/gorgurinho_capa.jpg"
+          alt="Capa gorgurinho"
+        />
+        <h2 id="titulo-c">Gorgurinho Estampado</h2>
+        <p>
+          ✨ TRANSFORME SUAS IDEIAS EM PROJETOS ÚNICOS!<br /><br />
 
-        📏 ESPECIFICAÇÕES DO PRODUTO<br>
-        ✔ Cor: Preto<br>
-        ✔ Material: Corano (couro sintético)<br>
-        ✔ Marca: Cipatex<br>
-        ✔ Alta resistência e durabilidade<br>
-        ✔ Fácil limpeza (pano úmido já resolve)<br>
-        ✔ Toque macio e acabamento premium<br><br>
+          Este kit é perfeito para quem ama criar com personalidade. Os tecidos
+          em gorgurinho estampado trazem cores vibrantes e padronagens variadas
+          — ideais para costura criativa, decoração, artesanato e patchwork.<br /><br />
 
-        🛠️ INDICAÇÕES DE USO<br>
-        ✅Bases para tapete<br>
-        ✅ Sofás e estofados<br>
-        ✅ Cabeceiras de cama<br>
-        ✅ Painéis e decoração<br>
-        ✅ Artesanato em geral<br><br>
+          ✔️ Tamanho aproximado de 1,00m x 1,50m cada<br />
+          ✔️ Estampas variadas (não se repetem no mesmo kit)<br />
+          ✔️ Tecidos com pequenos defeitos, mas 100% aproveitáveis<br /><br />
 
-        💡 DIFERENCIAIS<br>
-        ✨ Material resistente ao uso diário<br>
-        ✨ Não descasca com facilidade<br>
-        ✨ Ótimo custo-benefício<br>
-        ✨ Ideal para uso profissional ou doméstico<br>
-      </p>
-      <div class="image-gallery">
-        <img src="images/products/b_corano_preto_de_metro/coranoPreto1.jpg" alt="Corano preto imagem 1">
-        <img src="images/products/b_corano_preto_de_metro/coranoPreto2.jpg" alt="Corano preto imagem 2">
-        <img src="images/products/b_corano_preto_de_metro/coranoPreto3.jpg" alt="Corano preto imagem 3">
-        <img src="images/products/b_corano_preto_de_metro/coranoPreto4.jpg" alt="Corano preto imagem 4">
-        <img src="images/products/b_corano_preto_de_metro/coranoPreto5.jpg" alt="Corano preto imagem 5">
-      </div>
-      <div class="modal-actions">
-        <a class="btn primary"
-          href="https://wa.me/554330111131?text=Ol%C3%A1%2C%20quero%20detalhes%20sobre%20corano%20preto%20de%20metro."
-          target="_blank" rel="noopener">WhatsApp</a>
-        <a class="btn"
-          href="https://shopee.com.br/Corano-Preto-Cipatex-10-metros-Couro-Sint%C3%A9tico-Alta-Qualidade-Para-Estofaria-Base-tapete-Frufru-i.1225425014.58207699003"
-          target="_blank" rel="noopener">Shopee</a>
-      </div>
-    </div>
-  </div>
-
-  <div id="detalhe-c" class="modal" role="dialog" aria-labelledby="titulo-c">
-    <a class="modal-backdrop" href="#produtos" aria-label="Fechar"></a>
-    <div class="modal-card">
-      <a class="modal-close" href="#produtos" aria-label="Fechar">✕ Fechar</a>
-      <img class="modal-img" src="images/products/c_gorgurinho/gorgurinho_capa.jpg" alt="Capa gorgurinho">
-      <h2 id="titulo-c">Gorgurinho</h2>
-      <p>
-        ✨ TRANSFORME SUAS IDEIAS EM PROJETOS ÚNICOS!<br><br>
-
-        Este kit é perfeito para quem ama criar com personalidade. Os tecidos em gorgurinho estampado trazem cores
-        vibrantes e padronagens variadas — ideais para costura criativa, decoração, artesanato e patchwork.<br><br>
-
-        ✔️ 10 cortes de tecido gorgurinho<br>
-        ✔️ Tamanho aproximado de 1,00m x 1,50m cada<br>
-        ✔️ Estampas variadas (não se repetem no mesmo kit)<br>
-        ✔️ Tecidos com pequenos defeitos, mas 100% aproveitáveis<br><br>
-
-        🎯 IDEAL PARA CRIAR:<br>
-        👜 Bolsas, estojos, nécessaires, capas<br>
-        🧵 Patchwork, fuxico, aplicações, bordados<br>
-        🛋️ Almofadas, bandeirolas, painéis decorativos<br>
-        🎁 DIY e lembrancinhas personalizadas<br>
-      </p>
-      <div class="image-gallery">
-        <img src="images/products/c_gorgurinho/gorgurinho1.jpg" alt="Gorgurinho imagem 1">
-        <img src="images/products/c_gorgurinho/gorgurinho2.jpg" alt="Gorgurinho imagem 2">
-        <img src="images/products/c_gorgurinho/gorgurinho3.jpg" alt="Gorgurinho imagem 3">
-        <img src="images/products/c_gorgurinho/gorgurinho4.jpg" alt="Gorgurinho imagem 4">
-      </div>
-      <div class="modal-actions">
-        <a class="btn primary"
-          href="https://wa.me/554330111131?text=Ol%C3%A1%2C%20quero%20detalhes%20sobre%20gorgurinho." target="_blank"
-          rel="noopener">WhatsApp</a>
-        <a class="btn" href="https://shopee.com.br/KIT-10-CORTES-DE-TECIDO-GORGURINHO-ESTAMPADO-ARTESANATO-PATCHWORK-ARTESANATO-TAPETES-%F0%9F%A4%91ENVIO-IMEDIATO-i.1225425014.22194069944" target="_blank" rel="noopener">Shopee</a>
+          🎯 IDEAL PARA CRIAR:<br />
+          👜 Bolsas, estojos, nécessaires, capas<br />
+          🧵 Patchwork, fuxico, aplicações, bordados<br />
+          🛋️ Almofadas, bandeirolas, painéis decorativos<br />
+          🎁 DIY e lembrancinhas personalizadas<br />
+        </p>
+        <div class="image-gallery">
+          <img
+            src="images/products/c_gorgurinho/gorgurinho1.jpg"
+            alt="Gorgurinho imagem 1"
+          />
+          <img
+            src="images/products/c_gorgurinho/gorgurinho2.jpg"
+            alt="Gorgurinho imagem 2"
+          />
+          <img
+            src="images/products/c_gorgurinho/gorgurinho3.jpg"
+            alt="Gorgurinho imagem 3"
+          />
+          <img
+            src="images/products/c_gorgurinho/gorgurinho4.jpg"
+            alt="Gorgurinho imagem 4"
+          />
+        </div>
+        <div class="modal-actions">
+          <a
+            class="btn primary"
+            href="https://wa.me/554330111131?text=Ol%C3%A1%2C%20quero%20detalhes%20sobre%20gorgurinho."
+            target="_blank"
+            rel="noopener"
+            >WhatsApp</a
+          >
+          <a
+            class="btn"
+            href="https://shopee.com.br/KIT-10-CORTES-DE-TECIDO-GORGURINHO-ESTAMPADO-ARTESANATO-PATCHWORK-ARTESANATO-TAPETES-%F0%9F%A4%91ENVIO-IMEDIATO-i.1225425014.22194069944"
+            target="_blank"
+            rel="noopener"
+            >Shopee</a
+          >
+        </div>
       </div>
     </div>
-  </div>
 
-  <div id="detalhe-d" class="modal" role="dialog" aria-labelledby="titulo-d">
-    <a class="modal-backdrop" href="#produtos" aria-label="Fechar"></a>
-    <div class="modal-card">
-      <a class="modal-close" href="#produtos" aria-label="Fechar">✕ Fechar</a>
-      <img class="modal-img" src="images/products/d_helancas/helanca_capa.jpg" alt="Capa helancas">
-      <h2 id="titulo-d">Helancas</h2>
-      <p>Helancas com toque flexível para confecção, costura criativa, forração leve e projetos que precisam de caimento
-        maleável. Valores e disponibilidade somente por atendimento.</p>
-      <div class="image-gallery">
-        <img src="images/products/d_helancas/helanca1.jpg" alt="Helancas imagem 1">
-        <img src="images/products/d_helancas/helanca2.jpg" alt="Helancas imagem 2">
-      </div>
-      <div class="modal-actions">
-        <a class="btn primary" href="https://wa.me/554330111131?text=Ol%C3%A1%2C%20quero%20detalhes%20sobre%20helancas."
-          target="_blank" rel="noopener">WhatsApp</a>
-        <a class="btn" href="https://shopee.com.br/" target="_blank" rel="noopener">Shopee</a>
+    <div id="detalhe-d" class="modal" role="dialog" aria-labelledby="titulo-d">
+      <a class="modal-backdrop" href="#produtos" aria-label="Fechar"></a>
+      <div class="modal-card">
+        <a class="modal-close" href="#produtos" aria-label="Fechar">✕ Fechar</a>
+        <img
+          class="modal-img"
+          src="images/products/d_helancas/helanca_capa.jpg"
+          alt="Capa helancas"
+        />
+        <h2 id="titulo-d">HELANCAS</h2>
+        <p>
+          🎀 VIÉS DE HELANCA LIGHT 2,5CM-GRAMATURA 120<br><br>
+🧶 DÊ ACABAMENTO PROFISSIONAL AOS SEUS TAPETES!<br>Nosso viés de helanca light tem ótimo caimento, é fácil de aplicar e traz um acabamento limpo e durável para seus tapetes fru fru, bordas, aplicações e artesanato em geral.<br>
+Envio de cores sortidas ou conforme sua escolha (consulte no chat ou pelo WhatsApp)<br><br>
+🎯 APLICAÇÕES IDEAIS:<br>
+🔹 Tapetes fru fru<br>
+🔹 Bicos e bordas de artesanato<br>
+🔹 Acabamentos em costura criativa<br>
+🔹 Customização de peças<br>
+🔹 Produção em larga escala para revenda<br><br>
+✨ POR QUE USAR HELANCA LIGHT NO FRU FRU?<br>
+🔸 Excelente rendimento<br>
+🔸 Fácil de manusear e aplicar<br>
+🔸 Não desfia com facilidade<br>
+🔸 Proporciona um acabamento firme e bonito<br>
+🔸 Grande variedade de cores disponíveis<br>
+        </p>
+        <div class="image-gallery">
+          <img
+            src="images/products/d_helancas/helanca1.jpg"
+            alt="Helancas imagem 1"
+          />
+          <img
+            src="images/products/d_helancas/helanca2.jpg"
+            alt="Helancas imagem 2"
+          />
+        </div>
+        <div class="modal-actions">
+          <a
+            class="btn primary"
+            href="https://wa.me/554330111131?text=Ol%C3%A1%2C%20quero%20detalhes%20sobre%20helancas."
+            target="_blank"
+            rel="noopener"
+            >WhatsApp</a
+          >
+          <a
+            class="btn"
+            href="https://shopee.com.br/Kit-15kg-de-Helanca-Light-2-5cm-Cortada-Vi%C3%A9s%E2%80%93Cores-Sortidas-para-Tapete-Fru-Fru-Costura-e-Artesanato-i.1225425014.58254949639?extraParams=%7B%22display_model_id%22%3A179725013272%2C%22model_selection_logic%22%3A3%7D&sp_atk=697a166c-3fe0-458b-8c13-6c945270b222&xptdk=697a166c-3fe0-458b-8c13-6c945270b222"
+            target="_blank"
+            rel="noopener"
+            >Shopee</a
+          >
+        </div>
       </div>
     </div>
-  </div>
 
-  <div id="detalhe-e" class="modal" role="dialog" aria-labelledby="titulo-e">
-    <a class="modal-backdrop" href="#produtos" aria-label="Fechar"></a>
-    <div class="modal-card">
-      <a class="modal-close" href="#produtos" aria-label="Fechar">✕ Fechar</a>
-      <img class="modal-img" src="images/products/e_linhao_de_estofaria/linhao_capa.png" alt="Capa linhão de estofaria">
-      <h2 id="titulo-e">Linhão de estofaria</h2>
-      <p>Linhão de estofaria com visual elegante para renovar ambientes, produzir almofadas, revestir peças e criar
-        acabamentos decorativos. Valores e disponibilidade somente por atendimento.</p>
-      <div class="image-gallery">
-        <img src="images/products/e_linhao_de_estofaria/linhao1.jpg" alt="Linhão de estofaria imagem 1">
-        <img src="images/products/e_linhao_de_estofaria/linhao2.jpg" alt="Linhão de estofaria imagem 2">
-        <img src="images/products/e_linhao_de_estofaria/linhao3.jpg" alt="Linhão de estofaria imagem 3">
-        <img src="images/products/e_linhao_de_estofaria/linhao4.jpg" alt="Linhão de estofaria imagem 4">
-        <img src="images/products/e_linhao_de_estofaria/linhao5.jpg" alt="Linhão de estofaria imagem 5">
-        <img src="images/products/e_linhao_de_estofaria/linhao6.png" alt="Linhão de estofaria imagem 6">
-        <img src="images/products/e_linhao_de_estofaria/linhao7.png" alt="Linhão de estofaria imagem 7">
-        <img src="images/products/e_linhao_de_estofaria/linhao8.png" alt="Linhão de estofaria imagem 8">
-        <img src="images/products/e_linhao_de_estofaria/linhao9.png" alt="Linhão de estofaria imagem 9">
-      </div>
-      <div class="modal-actions">
-        <a class="btn primary"
-          href="https://wa.me/554330111131?text=Ol%C3%A1%2C%20quero%20detalhes%20sobre%20linh%C3%A3o%20de%20estofaria."
-          target="_blank" rel="noopener">WhatsApp</a>
-        <a class="btn" href="https://shopee.com.br/" target="_blank" rel="noopener">Shopee</a>
+    <div id="detalhe-e" class="modal" role="dialog" aria-labelledby="titulo-e">
+      <a class="modal-backdrop" href="#produtos" aria-label="Fechar"></a>
+      <div class="modal-card">
+        <a class="modal-close" href="#produtos" aria-label="Fechar">✕ Fechar</a>
+        <img
+          class="modal-img"
+          src="images/products/e_linhao_de_estofaria/linhao_capa.png"
+          alt="Capa linhão de estofaria"
+        />
+        <h2 id="titulo-e">Linhão de estofaria</h2>
+        <p>
+          Linhão de estofaria com visual elegante para renovar ambientes,
+          produzir almofadas, revestir peças e criar acabamentos decorativos.
+          Valores e disponibilidade somente por atendimento.
+        </p>
+        <div class="image-gallery">
+          <img
+            src="images/products/e_linhao_de_estofaria/linhao1.jpg"
+            alt="Linhão de estofaria imagem 1"
+          />
+          <img
+            src="images/products/e_linhao_de_estofaria/linhao2.jpg"
+            alt="Linhão de estofaria imagem 2"
+          />
+          <img
+            src="images/products/e_linhao_de_estofaria/linhao3.jpg"
+            alt="Linhão de estofaria imagem 3"
+          />
+          <img
+            src="images/products/e_linhao_de_estofaria/linhao4.jpg"
+            alt="Linhão de estofaria imagem 4"
+          />
+          <img
+            src="images/products/e_linhao_de_estofaria/linhao5.jpg"
+            alt="Linhão de estofaria imagem 5"
+          />
+          <img
+            src="images/products/e_linhao_de_estofaria/linhao6.png"
+            alt="Linhão de estofaria imagem 6"
+          />
+          <img
+            src="images/products/e_linhao_de_estofaria/linhao7.png"
+            alt="Linhão de estofaria imagem 7"
+          />
+          <img
+            src="images/products/e_linhao_de_estofaria/linhao8.png"
+            alt="Linhão de estofaria imagem 8"
+          />
+          <img
+            src="images/products/e_linhao_de_estofaria/linhao9.png"
+            alt="Linhão de estofaria imagem 9"
+          />
+        </div>
+        <div class="modal-actions">
+          <a
+            class="btn primary"
+            href="https://wa.me/554330111131?text=Ol%C3%A1%2C%20quero%20detalhes%20sobre%20linh%C3%A3o%20de%20estofaria."
+            target="_blank"
+            rel="noopener"
+            >WhatsApp</a
+          >
+          <a
+            class="btn"
+            href="https://shopee.com.br/"
+            target="_blank"
+            rel="noopener"
+            >Shopee</a
+          >
+        </div>
       </div>
     </div>
-  </div>
 
-  <div id="detalhe-f" class="modal" role="dialog" aria-labelledby="titulo-f">
-    <a class="modal-backdrop" href="#produtos" aria-label="Fechar"></a>
-    <div class="modal-card">
-      <a class="modal-close" href="#produtos" aria-label="Fechar">✕ Fechar</a>
-      <img class="modal-img" src="images/products/f_linhas_80/linhas80_capa.jpg" alt="Capa linhas 80">
-      <h2 id="titulo-f">Linhas 80</h2>
-      <p>Linhas 80 para costura, acabamento, manutenção e combinação com diferentes tecidos e projetos. Valores e
-        disponibilidade somente por atendimento.</p>
-      <div class="image-gallery">
-        <img src="images/products/f_linhas_80/linhas801.jpg" alt="Linhas 80 imagem 1">
-        <img src="images/products/f_linhas_80/linhas8010.jpg" alt="Linhas 80 imagem 10">
-        <img src="images/products/f_linhas_80/linhas8011.jpg" alt="Linhas 80 imagem 11">
-        <img src="images/products/f_linhas_80/linhas8012.jpg" alt="Linhas 80 imagem 12">
-        <img src="images/products/f_linhas_80/linhas8013.jpg" alt="Linhas 80 imagem 13">
-        <img src="images/products/f_linhas_80/linhas802.jpg" alt="Linhas 80 imagem 2">
-        <img src="images/products/f_linhas_80/linhas803.jpg" alt="Linhas 80 imagem 3">
-        <img src="images/products/f_linhas_80/linhas804.jpg" alt="Linhas 80 imagem 4">
-        <img src="images/products/f_linhas_80/linhas805.jpg" alt="Linhas 80 imagem 5">
-        <img src="images/products/f_linhas_80/linhas806.jpg" alt="Linhas 80 imagem 6">
-        <img src="images/products/f_linhas_80/linhas807.jpg" alt="Linhas 80 imagem 7">
-        <img src="images/products/f_linhas_80/linhas808.jpg" alt="Linhas 80 imagem 8">
-        <img src="images/products/f_linhas_80/linhas809.jpg" alt="Linhas 80 imagem 9">
-      </div>
-      <div class="modal-actions">
-        <a class="btn primary"
-          href="https://wa.me/554330111131?text=Ol%C3%A1%2C%20quero%20detalhes%20sobre%20linhas%2080." target="_blank"
-          rel="noopener">WhatsApp</a>
-        <a class="btn" href="https://shopee.com.br/" target="_blank" rel="noopener">Shopee</a>
+    <div id="detalhe-f" class="modal" role="dialog" aria-labelledby="titulo-f">
+      <a class="modal-backdrop" href="#produtos" aria-label="Fechar"></a>
+      <div class="modal-card">
+        <a class="modal-close" href="#produtos" aria-label="Fechar">✕ Fechar</a>
+        <img
+          class="modal-img"
+          src="images/products/f_linhas_80/linhas80_capa.jpg"
+          alt="Capa linhas 80"
+        />
+        <h2 id="titulo-f">Linhas 80</h2>
+        <p>
+          Linhas 80 para costura, acabamento, manutenção e combinação com
+          diferentes tecidos e projetos. Valores e disponibilidade somente por
+          atendimento.
+        </p>
+        <div class="image-gallery">
+          <img
+            src="images/products/f_linhas_80/linhas801.jpg"
+            alt="Linhas 80 imagem 1"
+          />
+          <img
+            src="images/products/f_linhas_80/linhas8010.jpg"
+            alt="Linhas 80 imagem 10"
+          />
+          <img
+            src="images/products/f_linhas_80/linhas8011.jpg"
+            alt="Linhas 80 imagem 11"
+          />
+          <img
+            src="images/products/f_linhas_80/linhas8012.jpg"
+            alt="Linhas 80 imagem 12"
+          />
+          <img
+            src="images/products/f_linhas_80/linhas8013.jpg"
+            alt="Linhas 80 imagem 13"
+          />
+          <img
+            src="images/products/f_linhas_80/linhas802.jpg"
+            alt="Linhas 80 imagem 2"
+          />
+          <img
+            src="images/products/f_linhas_80/linhas803.jpg"
+            alt="Linhas 80 imagem 3"
+          />
+          <img
+            src="images/products/f_linhas_80/linhas804.jpg"
+            alt="Linhas 80 imagem 4"
+          />
+          <img
+            src="images/products/f_linhas_80/linhas805.jpg"
+            alt="Linhas 80 imagem 5"
+          />
+          <img
+            src="images/products/f_linhas_80/linhas806.jpg"
+            alt="Linhas 80 imagem 6"
+          />
+          <img
+            src="images/products/f_linhas_80/linhas807.jpg"
+            alt="Linhas 80 imagem 7"
+          />
+          <img
+            src="images/products/f_linhas_80/linhas808.jpg"
+            alt="Linhas 80 imagem 8"
+          />
+          <img
+            src="images/products/f_linhas_80/linhas809.jpg"
+            alt="Linhas 80 imagem 9"
+          />
+        </div>
+        <div class="modal-actions">
+          <a
+            class="btn primary"
+            href="https://wa.me/554330111131?text=Ol%C3%A1%2C%20quero%20detalhes%20sobre%20linhas%2080."
+            target="_blank"
+            rel="noopener"
+            >WhatsApp</a
+          >
+          <a
+            class="btn"
+            href="https://shopee.com.br/"
+            target="_blank"
+            rel="noopener"
+            >Shopee</a
+          >
+        </div>
       </div>
     </div>
-  </div>
 
-  <div id="detalhe-g" class="modal" role="dialog" aria-labelledby="titulo-g">
-    <a class="modal-backdrop" href="#produtos" aria-label="Fechar"></a>
-    <div class="modal-card">
-      <a class="modal-close" href="#produtos" aria-label="Fechar">✕ Fechar</a>
-      <img class="modal-img" src="images/products/g_super_caixa_de_retalhos/superCaixaRetalhos_capa.png"
-        alt="Capa super caixa de retalhos">
-      <h2 id="titulo-g">Super caixa de retalhos</h2>
-      <p>Caixa com retalhos variados para artesanato, reaproveitamento criativo, testes de textura, composição de cores
-        e pequenos projetos. Valores e disponibilidade somente por atendimento.</p>
-      <div class="image-gallery">
-        <img src="images/products/g_super_caixa_de_retalhos/superCaixaRetalhos1.png"
-          alt="Super caixa de retalhos imagem 1">
-        <img src="images/products/g_super_caixa_de_retalhos/superCaixaRetalhos2.jpg"
-          alt="Super caixa de retalhos imagem 2">
-        <img src="images/products/g_super_caixa_de_retalhos/superCaixaRetalhos3.jpg"
-          alt="Super caixa de retalhos imagem 3">
-        <img src="images/products/g_super_caixa_de_retalhos/superCaixaRetalhos4.jpg"
-          alt="Super caixa de retalhos imagem 4">
-        <img src="images/products/g_super_caixa_de_retalhos/superCaixaRetalhos5.jpg"
-          alt="Super caixa de retalhos imagem 5">
-        <img src="images/products/g_super_caixa_de_retalhos/superCaixaRetalhos6.jpg"
-          alt="Super caixa de retalhos imagem 6">
-        <img src="images/products/g_super_caixa_de_retalhos/superCaixaRetalhos7.jpg"
-          alt="Super caixa de retalhos imagem 7">
-      </div>
-      <div class="modal-actions">
-        <a class="btn primary"
-          href="https://wa.me/554330111131?text=Ol%C3%A1%2C%20quero%20detalhes%20sobre%20super%20caixa%20de%20retalhos."
-          target="_blank" rel="noopener">WhatsApp</a>
-        <a class="btn" href="https://shopee.com.br/" target="_blank" rel="noopener">Shopee</a>
+    <div id="detalhe-g" class="modal" role="dialog" aria-labelledby="titulo-g">
+      <a class="modal-backdrop" href="#produtos" aria-label="Fechar"></a>
+      <div class="modal-card">
+        <a class="modal-close" href="#produtos" aria-label="Fechar">✕ Fechar</a>
+        <img
+          class="modal-img"
+          src="images/products/g_super_caixa_de_retalhos/superCaixaRetalhos_capa.png"
+          alt="Capa super caixa de retalhos"
+        />
+        <h2 id="titulo-g">Super caixa de retalhos</h2>
+        <p>
+          Caixa com retalhos variados para artesanato, reaproveitamento
+          criativo, testes de textura, composição de cores e pequenos projetos.
+          Valores e disponibilidade somente por atendimento.
+        </p>
+        <div class="image-gallery">
+          <img
+            src="images/products/g_super_caixa_de_retalhos/superCaixaRetalhos1.png"
+            alt="Super caixa de retalhos imagem 1"
+          />
+          <img
+            src="images/products/g_super_caixa_de_retalhos/superCaixaRetalhos2.jpg"
+            alt="Super caixa de retalhos imagem 2"
+          />
+          <img
+            src="images/products/g_super_caixa_de_retalhos/superCaixaRetalhos3.jpg"
+            alt="Super caixa de retalhos imagem 3"
+          />
+          <img
+            src="images/products/g_super_caixa_de_retalhos/superCaixaRetalhos4.jpg"
+            alt="Super caixa de retalhos imagem 4"
+          />
+          <img
+            src="images/products/g_super_caixa_de_retalhos/superCaixaRetalhos5.jpg"
+            alt="Super caixa de retalhos imagem 5"
+          />
+          <img
+            src="images/products/g_super_caixa_de_retalhos/superCaixaRetalhos6.jpg"
+            alt="Super caixa de retalhos imagem 6"
+          />
+          <img
+            src="images/products/g_super_caixa_de_retalhos/superCaixaRetalhos7.jpg"
+            alt="Super caixa de retalhos imagem 7"
+          />
+        </div>
+        <div class="modal-actions">
+          <a
+            class="btn primary"
+            href="https://wa.me/554330111131?text=Ol%C3%A1%2C%20quero%20detalhes%20sobre%20super%20caixa%20de%20retalhos."
+            target="_blank"
+            rel="noopener"
+            >WhatsApp</a
+          >
+          <a
+            class="btn"
+            href="https://shopee.com.br/"
+            target="_blank"
+            rel="noopener"
+            >Shopee</a
+          >
+        </div>
       </div>
     </div>
-  </div>
 
-  <div id="detalhe-h" class="modal" role="dialog" aria-labelledby="titulo-h">
-    <a class="modal-backdrop" href="#produtos" aria-label="Fechar"></a>
-    <div class="modal-card">
-      <a class="modal-close" href="#produtos" aria-label="Fechar">✕ Fechar</a>
-      <img class="modal-img" src="images/products/h_tnt_150/tnt150_capa.png" alt="Capa TNT 150">
-      <h2 id="titulo-h">TNT 150</h2>
-      <p>TNT 150 para proteção, organização, embalagens, decoração, eventos e projetos manuais com ótimo aproveitamento.
-        Valores e disponibilidade somente por atendimento.</p>
-      <div class="image-gallery">
-        <img src="images/products/h_tnt_150/tnt1501.png" alt="TNT 150 imagem 1">
-        <img src="images/products/h_tnt_150/tnt1502.png" alt="TNT 150 imagem 2">
-        <img src="images/products/h_tnt_150/tnt1503.png" alt="TNT 150 imagem 3">
-      </div>
-      <div class="modal-actions">
-        <a class="btn primary"
-          href="https://wa.me/554330111131?text=Ol%C3%A1%2C%20quero%20detalhes%20sobre%20TNT%20150." target="_blank"
-          rel="noopener">WhatsApp</a>
-        <a class="btn" href="https://shopee.com.br/" target="_blank" rel="noopener">Shopee</a>
+    <div id="detalhe-h" class="modal" role="dialog" aria-labelledby="titulo-h">
+      <a class="modal-backdrop" href="#produtos" aria-label="Fechar"></a>
+      <div class="modal-card">
+        <a class="modal-close" href="#produtos" aria-label="Fechar">✕ Fechar</a>
+        <img
+          class="modal-img"
+          src="images/products/h_tnt_150/tnt150_capa.png"
+          alt="Capa TNT 150"
+        />
+        <h2 id="titulo-h">TNT 150</h2>
+        <p>
+          TNT 150 para proteção, organização, embalagens, decoração, eventos e
+          projetos manuais com ótimo aproveitamento. Valores e disponibilidade
+          somente por atendimento.
+        </p>
+        <div class="image-gallery">
+          <img
+            src="images/products/h_tnt_150/tnt1501.png"
+            alt="TNT 150 imagem 1"
+          />
+          <img
+            src="images/products/h_tnt_150/tnt1502.png"
+            alt="TNT 150 imagem 2"
+          />
+          <img
+            src="images/products/h_tnt_150/tnt1503.png"
+            alt="TNT 150 imagem 3"
+          />
+        </div>
+        <div class="modal-actions">
+          <a
+            class="btn primary"
+            href="https://wa.me/554330111131?text=Ol%C3%A1%2C%20quero%20detalhes%20sobre%20TNT%20150."
+            target="_blank"
+            rel="noopener"
+            >WhatsApp</a
+          >
+          <a
+            class="btn"
+            href="https://shopee.com.br/"
+            target="_blank"
+            rel="noopener"
+            >Shopee</a
+          >
+        </div>
       </div>
     </div>
-  </div>
-  <script src="script/script.js" defer></script>
-</body>
-
+    <script src="script/script.js" defer></script>
+  </body>
 </html>
